@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jirasin Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบสอบถาม</title>
 </head>
-<bodsady>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <h1>My Home Page</h1>
-  <hr>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta dicta accusantium provident odit voluptate impedit ab voluptates dolore, alias quos eligendi amet vitae perspiciatis commodi quasi quidem unde consequuntur.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi error, laboriosam nemo molestiae voluptates atque dolorum maxime tenetur fugit sint incidunt, voluptate tempore perspiciatis non consequuntur accusantium nihil magnam doloribus?
-  Odit eos error ipsa expedita minus, modi animi ullam veritatis? Sit impedit, excepturi earum quisquam tempora, ab quia repellat veniam voluptate dolor autem, amet illum consequuntur vel mollitia explicabo dolores!
-  Ad soluta corporis explicabo, nihil porro, impedit saepe necessitatibus obcaecati earum illo expedita, illum quisquam. Harum nam dolores cum aliquam magnam eaque in, eveniet unde quod temporibus atque expedita placeat!
-  Maxime ut recusandae officiis ducimus adipisci! Ullam rem est quibusdam quisquam quod dolor, quas assumenda unde vitae vel modi rerum, quo illum, laborum praesentium nulla minus dignissimos ipsam perspiciatis placeat.
-  Quos, amet ducimus? Asperiores tempora excepturi tempore nobis adipisci cumque earum ipsa modi hic aperiam! Voluptatibus repellendus pariatur fugiat officiis dolorum officia, sequi laudantium ad harum repudiandae, voluptates laboriosam quia!</p>
-   <hr>
-  </bodsady>
+
+<body>
+ 
+    <h1 style="text-align: center;">แบบสอบถาม</h1>
+    <hr>
+   
+    <form>
+        <table align="center" style="background-color: #FFFFE0; padding: 20px; border: 1px solid #ccc;">
+           <tr>
+            <td><b>ข้อมูลผู้ตอบแบบสอบถาม</b></td>
+           </tr>
+          <tr>
+                <td><b><label> ชื่อ-นามสกุล: </label> </b>
+                  <input type="text" name="name"></td>
+               
+            </tr>
+            <tr>
+                <td>
+                  <b> <label>รหัสนักศึกษา:</label></b>
+                  <input type="text" name="studentID">
+                </td>
+               
+            </tr>
+            <tr>
+                <td><b> <label>เพศ:</label></b> <input type="radio" name="gender" value="male" checked> ชาย
+                  <input type="radio" name="gender" value="female"> หญิง</td>
+               
+                 
+               
+            </tr>
+            <tr>
+             
+              <td><b><label for="cars">สังกัดคณะ:</label></b>
+                 <select name="faculty" >
+                        <option>วิทยาศาสตร์</option>
+                        <option>วิทยาการคอมพิวเตอร์</option>
+                        <option>ครุศาสตร์</option>
+                        <option>บริหารธุรกิจ</option>
+                        <option>เกษตรศาสตร์</option>
+                        <option>พยาบาลศาสตร์</option>
+                        <option>เทคโนโลยีอุตสาหกรรม</option>
+                        <option>สาธารณสุขศาสตร์</option>
+                         
+                    </select></td>
+                 
+                 
+            <tr>
+                <td><b>แม่สีที่ชื่นชอบ:</b><br>
+                  <input type="checkbox" name="color" value="red"> สีแดง
+                    <input type="checkbox" name="color" value="blue"> สีน้ำเงิน
+                    <input type="checkbox" name="color" value="green"> สีเขียว
+                  </td>
+             
+            </tr>
+            <tr>
+                <td><b>ผลไม้ที่ชื่นชอบ:</b><br>
+
+                    <input type="checkbox" name="fruit" value="mango"> มะม่วง
+                    <input type="checkbox" name="fruit" value="orange"> น้อยหน่า
+                    <input type="checkbox" name="fruit" value="banana"> ทุเรียน<br>
+                    <input type="checkbox" name="fruit" value="banana"> ลำใย
+                    <input type="checkbox" name="fruit" value="banana"> ฝรั่ง
+                    <input type="checkbox" name="fruit" value="banana"> แตงโม
+                </td>
+            </tr>
+            <tr>
+                <td><b>อาหารที่ชื่นชอบ:</b><br>
+                    <input type="checkbox" name="food" value="grilled_pork"> ต้มยำกุ้ง
+                    <input type="checkbox" name="food" value="fried_rice"> ไข่เจียวหมูสับ
+                    <input type="checkbox" name="food" value="grilled_pork"> แกงข่าไก่<br>
+                    <input type="checkbox" name="food" value="grilled_pork"> แกงเขียวหวานไก่
+                    <input type="checkbox" name="food" value="grilled_pork"> ผัดไทย
+                    <input type="checkbox" name="food" value="grilled_pork">ราดหน้าหมี่กรอบ
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><br>
+                    <input type="submit" value="บันทึก">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>
